@@ -1,0 +1,7 @@
+<child-comp [userName]="name" [userAge]="age">
+	<h2>Hi, {{name}}</h2>
+</child-comp>
+<p #userName>{{name}}</p>
+<p>{{userName.textContent}}</p>
+<input type="text" [(ngModel)]="name">
+<input type="number" [(ngModel)]="age">
